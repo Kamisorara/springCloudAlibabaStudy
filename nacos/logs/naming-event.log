@@ -106,3 +106,129 @@
 
 2022-09-06 12:05:30,092 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
 
+2022-09-06 12:14:48,354 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:14:48,354 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 
+
+2022-09-06 12:16:11,996 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:16:11,996 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-09-06 12:16:12,027 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:16:12,027 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-09-06 12:16:19,230 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:16:19,232 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
+
+2022-09-06 12:16:20,083 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8181@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 12:16:23,992 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8181@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 12:16:26,919 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 192.168.31.174:8181@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 12:16:27,890 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:16:27,890 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-06 12:16:30,171 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8180@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 12:16:30,243 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-06 12:16:30,243 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_true,
+
+2022-09-06 12:16:30,326 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 12:16:32,514 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 12:16:32,898 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8180@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 12:16:34,160 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-ENABLED} valid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 12:16:34,948 INFO serviceName: DEFAULT_GROUP@@book-service {POS} {IP-ENABLED} valid: 192.168.31.174:8180@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 12:37:31,901 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-06 12:37:31,960 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
+
+2022-09-06 12:37:31,984 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_true,
+
+2022-09-06 12:37:32,761 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8181@DEFAULT in 1, msg: tcp:timeout
+
+2022-09-06 12:37:33,183 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:timeout
+
+2022-09-06 12:37:33,411 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8180@DEFAULT in 1, msg: tcp:timeout
+
+2022-09-06 12:37:33,764 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8181@DEFAULT in 2, msg: tcp:timeout
+
+2022-09-06 12:37:34,174 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:timeout
+
+2022-09-06 12:37:34,403 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8180@DEFAULT in 2, msg: tcp:timeout
+
+2022-09-06 12:37:35,017 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid: 192.168.31.174:8181@DEFAULT, region: unknown, msg: tcp:timeout
+
+2022-09-06 12:37:35,428 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-DISABLED} invalid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:timeout
+
+2022-09-06 12:37:35,659 INFO serviceName: DEFAULT_GROUP@@book-service {POS} {IP-DISABLED} invalid: 192.168.31.174:8180@DEFAULT, region: unknown, msg: tcp:timeout
+
+2022-09-06 13:52:59,281 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8180@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 14:42:28,527 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 16:41:25,020 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_false,
+
+2022-09-06 16:41:27,856 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 16:41:32,871 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 16:41:36,635 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-ENABLED} valid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 16:41:55,874 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_false,
+
+2022-09-06 16:41:58,061 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8180@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 16:41:59,748 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_false,
+
+2022-09-06 16:42:03,065 INFO serviceName: DEFAULT_GROUP@@book-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8180@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 16:42:03,795 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8181@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 16:42:06,825 INFO serviceName: DEFAULT_GROUP@@book-service {POS} {IP-ENABLED} valid: 192.168.31.174:8180@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 16:42:08,800 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8181@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 16:42:12,552 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 192.168.31.174:8181@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 16:53:49,762 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_true,
+
+2022-09-06 16:53:50,722 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:timeout
+
+2022-09-06 16:53:51,723 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:timeout
+
+2022-09-06 16:53:52,986 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-DISABLED} invalid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:timeout
+
+2022-09-06 16:54:06,776 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_false,
+
+2022-09-06 16:54:10,129 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 16:54:15,130 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 16:54:18,892 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-ENABLED} valid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:ok+
+
+2022-09-06 17:37:51,946 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_true,
+
+2022-09-06 17:37:52,999 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:timeout
+
+2022-09-06 17:37:54,009 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-DISABLED} pre-invalid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:timeout
+
+2022-09-06 17:37:55,265 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-DISABLED} invalid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:timeout
+
+2022-09-06 17:38:07,433 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.174:8182_false,
+
+2022-09-06 17:38:07,629 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 1, msg: tcp:ok+
+
+2022-09-06 17:38:12,406 INFO serviceName: DEFAULT_GROUP@@user-service {OTHER} {IP-ENABLED} pre-valid: 192.168.31.174:8182@DEFAULT in 2, msg: tcp:ok+
+
+2022-09-06 17:38:15,992 INFO serviceName: DEFAULT_GROUP@@user-service {POS} {IP-ENABLED} valid: 192.168.31.174:8182@DEFAULT, region: unknown, msg: tcp:ok+
+

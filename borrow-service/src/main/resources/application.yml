@@ -13,6 +13,14 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        ephemeral: false
+    sentinel:
+      transport:
+        #添加监控页面地址
+        dashboard: localhost:8858
+      # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+      web-context-unify: false
+      block-page: /blocked
 #配置mybatis-plus信息
 mybatis-plus:
   #  global-config:
