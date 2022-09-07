@@ -16,4 +16,14 @@ public class BookServiceImpl implements BookService {
     public Book getBookById(Long id) {
         return bookMapper.getBookById(id);
     }
+
+    @Override
+    public int getBookRemain(Long bookId) {
+        return bookMapper.getRemain(bookId);
+    }
+
+    @Override
+    public Boolean setBookRemain(Long bookId, int count) {
+        return bookMapper.setRemain(bookId, count) > 0;
+    }
 }

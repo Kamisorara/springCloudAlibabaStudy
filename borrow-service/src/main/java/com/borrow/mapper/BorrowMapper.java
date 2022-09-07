@@ -15,4 +15,7 @@ public interface BorrowMapper extends BaseMapper<Borrow> {
     List<Borrow> getBorrowByBid(Long bookId);
 
     Borrow getBorrow(@Param("userId") Long userId, @Param("bookId") Long bookId);
+
+    //添加借阅记录
+    int addBorrow(@Param("userId") Long userId, @Param("bookId") Long bookId);
 }

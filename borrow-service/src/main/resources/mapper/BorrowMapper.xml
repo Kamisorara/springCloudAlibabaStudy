@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.borrow.mapper.BorrowMapper">
+    <!--    添加借阅记录-->
+    <insert id="addBorrow">
+        INSERT INTO db_borrow (uid, bid)
+        VALUES (#{userId}, #{bookId});
+    </insert>
     <select id="getBorrowByUid" resultType="com.commons.entity.Borrow">
         SELECT *
         FROM `db_borrow` dbow

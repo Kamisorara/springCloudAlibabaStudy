@@ -16,4 +16,14 @@ public class UserServiceImpl implements UserService {
     public User getUserById(Long userId) {
         return userMapper.getUserById(userId);
     }
+
+    @Override
+    public int getRemain(Long userId) {
+        return userMapper.getUserBookRemain(userId);
+    }
+
+    @Override
+    public Boolean setRemain(Long userId, int count) {
+        return userMapper.updateBookCount(userId, count) > 0;
+    }
 }

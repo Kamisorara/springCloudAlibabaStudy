@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import com.baomidou.mybatisplus.annotation.TableName;
 
+import java.security.PrivateKey;
+
 /**
  * (db_book)表实体类
  *
@@ -23,6 +25,8 @@ public class Book {
     private String title;
 
     private String desc;
+
+    private int count;
 
 }
 

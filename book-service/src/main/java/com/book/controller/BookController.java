@@ -17,4 +17,15 @@ public class BookController {
     Book findBookById(@PathVariable("bid") Long bid) {
         return bookService.getBookById(bid);
     }
+
+    @RequestMapping("/book/remain/{bid}")
+    public int bookRemain(@PathVariable("bid") Long uid) {
+        return bookService.getBookRemain(uid);
+    }
+
+    @RequestMapping("/book/borrow/{bid}")
+    public boolean bookBorrow(@PathVariable("bid") Long uid) {
+        int remain = bookService.getBookRemain(uid);
+        return bookService.setBookRemain(uid, remain - 1);
+    }
 }

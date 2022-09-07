@@ -21,8 +21,8 @@ public class BorrowController {
 
     //测试
     @RequestMapping("/borrow2/{uid}")
-    UserBorrowDetail findUserBorrows2(@PathVariable("uid") Long uid) {
-        return borrowService.getUserBorrowDetailByUid(uid);
+    String findUserBorrows2(@PathVariable("uid") Long uid) {
+        return "Hello World";
     }
 
     //限流页面
@@ -32,6 +32,20 @@ public class BorrowController {
         object.put("code", 403);
         object.put("success", false);
         object.put("massage", "您的请求频率过快，请稍后再试！");
+        return object;
+    }
+
+
+    //用户借阅api
+    @RequestMapping("/borrow/take/{uid}/{bid}")
+    JSONObject borrow(@PathVariable("uid") Long uid,
+                      @PathVariable("bid") Long bid) {
+        borrowService.doBorrow(uid, bid);
+
+        JSONObject object = new JSONObject();
+        object.put("code", "200");
+        object.put("success", false);
+        object.put("message", "借阅成功！");
         return object;
     }
 }

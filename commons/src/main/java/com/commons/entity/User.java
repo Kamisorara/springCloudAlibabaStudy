@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 /**
  * (db_user)表实体类
  *
@@ -14,7 +15,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName(value= "db_user")
+@TableName(value = "db_user")
 public class User {
     //用户id
     private Long uid;
@@ -24,6 +25,8 @@ public class User {
     private Integer age;
     //用户性别
     private String sex;
+    //用户可借阅数
+    private int bookCount;
 
 }
 

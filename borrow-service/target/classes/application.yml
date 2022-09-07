@@ -20,7 +20,7 @@ spring:
         dashboard: localhost:8858
       # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
       web-context-unify: false
-      block-page: /blocked
+      block-page: /blockedq
 #配置mybatis-plus信息
 mybatis-plus:
   #  global-config:
@@ -28,3 +28,8 @@ mybatis-plus:
   #       id生成策略 auto为数据库自增
   #     id-type: auto
   mapper-locations: classpath*:/mapper/**/*.xml
+
+#开启feign 熔断降级
+feign:
+  sentinel:
+    enabled: true
