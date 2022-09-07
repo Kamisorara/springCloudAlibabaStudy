@@ -40,3 +40,23 @@
 
 2022-09-07 13:32:00,252 INFO raft peers changed: [Member{ip='192.168.31.174', port=8848, state=UP, extendInfo={lastRefreshTime=1662528720252, raftPort=7848, version=1.4.3}}]
 
+2022-09-07 13:37:06,349 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@book-service
+
+2022-09-07 13:37:06,493 INFO [RAFT-NOTIFIER] datum is changed, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@book-service, value: Service{name='DEFAULT_GROUP@@book-service', protectThreshold=0.0, appName='null', groupName='DEFAULT_GROUP', metadata={}}
+
+2022-09-07 13:37:06,495 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@book-service
+
+2022-09-07 13:37:08,362 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrow-service
+
+2022-09-07 13:37:08,367 INFO [RAFT-NOTIFIER] datum is changed, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@borrow-service, value: Service{name='DEFAULT_GROUP@@borrow-service', protectThreshold=0.0, appName='null', groupName='DEFAULT_GROUP', metadata={}}
+
+2022-09-07 13:37:08,369 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrow-service
+
+2022-09-07 13:37:11,592 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@user-service
+
+2022-09-07 13:37:11,597 INFO [RAFT-NOTIFIER] datum is changed, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@user-service, value: Service{name='DEFAULT_GROUP@@user-service', protectThreshold=0.0, appName='null', groupName='DEFAULT_GROUP', metadata={}}
+
+2022-09-07 13:37:11,601 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@user-service
+
+2022-09-07 21:01:33,173 INFO add listener: com.alibaba.nacos.naming.iplist.a5e8a03c-f0d2-467e-80ca-1da607ded6a9##SEATA_GROUP@@seata-server
+
