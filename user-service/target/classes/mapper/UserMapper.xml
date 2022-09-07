@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.user.mapper.UserMapper">
+    <!--    更新用户可借阅数量-->
+    <update id="updateBookCount">
+        UPDATE db_user du
+        SET du.book_count = #{count}
+        WHERE du.uid = #{userId};
+    </update>
     <select id="getUserById" resultType="com.commons.entity.User">
         SELECT *
+        FROM `db_user` du
+        WHERE du.uid = #{userId};
+    </select>
+    <!--    获取用户可借阅数量-->
+    <select id="getUserBookRemain" resultType="java.lang.Integer">
+        SELECT du.book_count
         FROM `db_user` du
         WHERE du.uid = #{userId};
     </select>

@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.book.mapper.BookMapper">
+    <!--    借阅减少书籍借阅-->
+    <update id="setRemain">
+        UPDATE db_book db
+        SET db.count = #{count}
+        WHERE db.bid = #{bookId};
+    </update>
     <select id="getBookById" resultType="com.commons.entity.Book">
         SELECT *
         FROM `db_book` db
+        WHERE db.bid = #{bookId};
+    </select>
+    <!--    获取剩余书本-->
+    <select id="getRemain" resultType="java.lang.Integer">
+        SELECT db.count
+        FROM db_book db
         WHERE db.bid = #{bookId};
     </select>
 </mapper>

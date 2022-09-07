@@ -10,6 +10,7 @@ import com.borrow.service.client.UserClient;
 import com.commons.entity.Book;
 import com.commons.entity.Borrow;
 import com.commons.entity.User;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,8 +41,10 @@ public class BorrowServiceImpl implements BorrowService {
         return new UserBorrowDetail(user, bookList);
     }
 
+    @GlobalTransactional //开始分布式事务
     @Override
     public Boolean doBorrow(Long uid, Long bid) {
+//        System.out.println(RootContext.getXID()); //打印XID
         //1. 判断图书和用户是否都支持借阅
         if (bookClient.bookRemain(bid) < 1) throw new RuntimeException("图书数量不足");
         if (userClient.userRemain(uid) < 1) throw new RuntimeException("用户借阅量不足");
