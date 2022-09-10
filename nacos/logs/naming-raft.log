@@ -60,3 +60,7 @@
 
 2022-09-07 21:01:33,173 INFO add listener: com.alibaba.nacos.naming.iplist.a5e8a03c-f0d2-467e-80ca-1da607ded6a9##SEATA_GROUP@@seata-server
 
+2022-09-07 21:22:15,974 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.a5e8a03c-f0d2-467e-80ca-1da607ded6a9##SEATA_GROUP@@seata-server
+
+2022-09-07 21:31:57,166 INFO add listener: com.alibaba.nacos.naming.iplist.a5e8a03c-f0d2-467e-80ca-1da607ded6a9##SEATA_GROUP@@seata-server
+

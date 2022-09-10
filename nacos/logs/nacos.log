@@ -740,3 +740,27 @@ com.alibaba.nacos.api.exception.NacosException: content is blank :
 
 2022-09-07 21:01:57,646 WARN clearConfigHistory start
 
+2022-09-07 21:11:56,437 INFO [capacityManagement] start correct usage
+
+2022-09-07 21:11:56,437 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-07 21:11:57,654 WARN clearConfigHistory start
+
+2022-09-07 21:21:56,444 INFO [capacityManagement] start correct usage
+
+2022-09-07 21:21:56,445 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-07 21:21:57,661 WARN clearConfigHistory start
+
+2022-09-07 21:31:56,448 INFO [capacityManagement] start correct usage
+
+2022-09-07 21:31:56,448 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-07 21:31:57,671 WARN clearConfigHistory start
+
+2022-09-07 21:41:56,462 INFO [capacityManagement] start correct usage
+
+2022-09-07 21:41:56,462 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-09-07 21:41:57,675 WARN clearConfigHistory start
+

@@ -204,3 +204,13 @@
 
 2022-09-07 21:01:06,863 INFO [dump-task] add task. groupKey=store.mode+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, taskKey=store.mode+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9+false+null
 
+2022-09-07 21:20:17,584 INFO [dump-task] add task. groupKey=store.mode+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, taskKey=store.mode+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9+false+null
+
+2022-09-07 21:26:02,291 INFO [dump-task] add task. groupKey=store.db.url+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, taskKey=store.db.url+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9+false+null
+
+2022-09-07 21:31:17,056 INFO [dump-task] add task. groupKey=store.db.driverClassName+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, taskKey=store.db.driverClassName+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9+false+null
+
+2022-09-07 21:31:42,838 INFO [dump-task] add task. groupKey=store.db.driverClassName+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, taskKey=store.db.driverClassName+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9+false+null
+
+2022-09-07 21:31:42,905 WARN [dump-ignore] ignore to save cache file. groupKey=store.db.driverClassName+SEATA_GROUP+a5e8a03c-f0d2-467e-80ca-1da607ded6a9, md5=33763409bb7f4838bde4fae9540433e4, lastModifiedOld=1662557477049, lastModifiedNew=1662557502835
+
